@@ -6,3 +6,5 @@ Roulette.py is a simple program meant to simluate a number of roulette games. I 
 With Games.py I was trying to replicate the code from this YouTube video (https://youtu.be/YNMkADpvO4w). It was my first approach to game theory and I am generally happy with how the end result turned out.
 
 Genetic_polynomial was my firt attempt at using genetic algorithms. The program finds the minimum of a function f: (x,y) -> z. Things like division by zero are not addressed in the code.
+
+txt_elab.py was an attempt to see how Zipf's law works. One of the first texts I used was Virgil's Aeneid. Fun fact: many of the words in his work occur a multiple of six times.
