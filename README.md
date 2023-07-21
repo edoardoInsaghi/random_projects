@@ -6,6 +6,8 @@ Roulette.py is a simple program meant to simluate a number of roulette games. I 
 
 With Games.py I was trying to replicate the code from this YouTube video (https://youtu.be/YNMkADpvO4w). It was my first approach to game theory and I am generally happy with how the end result turned out.
 
-Genetic_polynomial.py was my firt attempt at using genetic algorithms. The program finds the minimum of a given function f: R^2 -> R. Things like division by zero are not dealt with in the code. Thanks to my professor who introduced me to an extremely interesting book titled "Essentials of metaheuristics".
+Genetic_polynomial.py was my firt attempt at using genetic algorithms. The program finds the minimum of a given function f: R^2 -> R. Things like division by zero are not dealt with in the code. Thanks to my professor who introduced me to an interesting book titled "Essentials of metaheuristics" by Sean Luke.
 
-Txt_elab.py was an attempt to see how Zipf's law works on texts. It states the existence of an exponential relation law between the number of occurrences of a specific word in a text and its rank (i.e. most used word, second most used word, etc).  
+Txt_elab.py was an attempt to see how Zipf's law works on texts. It states the existence of an exponential law between the number of occurrences of a specific word in a text and its rank (i.e. most used word, second most used word, etc).  
+
+
