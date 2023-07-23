@@ -5,14 +5,6 @@ from matplotlib import pyplot as plt
 import numpy as np
 
 
-def process_file(file_name):
-    hist = {}
-    file = open(file_name)
-    for line in file:
-        process_line(line, hist)
-    return hist
-
-
 def process_line(line, hist):
     line.replace('-', '')
     for word in line.split():
@@ -28,7 +20,17 @@ def process_line(line, hist):
                 else:
                     hist[word] += 1
 
+                    
+# returns a dictionary with "word" : "counts" couples
+def process_file(file_name):
+    hist = {}
+    file = open(file_name)
+    for line in file:
+        process_line(line, hist)
+    return hist
 
+
+# finds the most common words in the text
 def most_common(hist):
     t = []
     for key, value in hist.items():
@@ -69,6 +71,8 @@ def markov_analysis(file_name):
     return hist
 
 
+# given two contiguous words in the text tries to generate the
+# remaining part of the phrase
 def auto_complete(hist, n=100, separator=' '):
     word1 = input('Insert the first word: ')
     word2 = input('Insert the second word: ')
@@ -81,6 +85,7 @@ def auto_complete(hist, n=100, separator=' '):
             word = input('Word not found, please enter a new one: ')
 
     return separator.join(speech)
+
 
 
 def zipf_law(filename):
@@ -117,23 +122,6 @@ def zipf_law(filename):
     plt.show()
 
 
-def cumulative_distribution(filename):
-    hist = process_file(filename)
-    totw = total_words(process_file(filename))
-    unqw = unique_words_number(process_file(filename))
-    to_sort = np.arange(len(hist), dtype=float)
-    i = -1
-    for val in hist.values():
-        i += 1
-        to_sort[i] = val/totw
-    np.sort(to_sort)
-    distr = np.cumsum(to_sort)
-    x = np.arange(len(distr), dtype=float)
-    x /= unqw
-    plt.plot(x, distr)
-    plt.show()
 
-
-
-# 'cumulative_distribution("mobydick.txt")
-zipf_law("mobydick.txt")
+# Example
+# zipf_law("mobydick.txt")

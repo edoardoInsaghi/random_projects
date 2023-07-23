@@ -3,7 +3,7 @@ import math as m
 import random
 import matplotlib.pyplot as plt
 
-
+# Just a point
 class Individual:
     def __init__(self, x, y):
         self.x = x
@@ -22,7 +22,7 @@ def make_population(n, k):
         population.append(make_individual(k))
     return population
 
-
+# fitness function
 def fit(Individual):
     X = Individual.x
     Y = Individual.y
@@ -49,6 +49,10 @@ def plot(population):
     plt.show()
 
 
+# first_sample_size is the initial number of individuals
+# generations is the nuber of iterations until the algorithm stops
+# limit_value sets a (squared) bound on the fitness landscape
+# elite represent the nuber of individuals that get to reproduce
 def evolution(first_sample_size, generations, limit_value, elite):
 
     population = make_population(first_sample_size, limit_value)
@@ -86,7 +90,7 @@ def evolution(first_sample_size, generations, limit_value, elite):
 
     return population, best
 
-
-population, best = evolution(200, 50, 10000, 30)
-print(f"({round(best.x, 3)}, {round(best.y, 3)})", "\t", round(best.fitness, 2))
-plot(population)
+# Example
+# population, best = evolution(200, 50, 10000, 30)
+# print(f"({round(best.x, 3)}, {round(best.y, 3)})", "\t", round(best.fitness, 2))
+# plot(population)
