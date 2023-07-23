@@ -45,7 +45,7 @@ euler_method <- function(diff_eq,
 
 
 
-
+# solves the Cauchy problem for several initial condition
 phase_space <- function(diff_eq, 
                         params, 
                         x_0, y_0, 
