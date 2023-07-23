@@ -40,6 +40,7 @@ class Roulette:
         plt.show()
 
 
-my_roulette = Roulette()
-my_roulette.game(100000)
-my_roulette.plot_walks(100000)
+# Example
+# my_roulette = Roulette()
+# my_roulette.game(100000)
+# my_roulette.plot_walks(100000)
