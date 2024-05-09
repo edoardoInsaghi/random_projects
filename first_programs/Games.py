@@ -143,5 +143,5 @@ def game(pop_size, food_size, game_len):
     return evolution
 
 # Example
-# evolution = game(10, 2500, 100)
-# show_evolution(evolution)
+evolution = game(10, 2500, 100)
+show_evolution(evolution)
