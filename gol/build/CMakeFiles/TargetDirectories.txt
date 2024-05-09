@@ -1,0 +1,3 @@
+/Users/home/Desktop/programs/random_projects/gol/build/CMakeFiles/gol.dir
+/Users/home/Desktop/programs/random_projects/gol/build/CMakeFiles/edit_cache.dir
+/Users/home/Desktop/programs/random_projects/gol/build/CMakeFiles/rebuild_cache.dir
